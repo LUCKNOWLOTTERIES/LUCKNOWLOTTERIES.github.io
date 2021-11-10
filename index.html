@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        html{
+            background: white;
+            font-family: monospace;
+        }
+        .main{
+            margin-top: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            border: 3px solid #f14a74;
+            height: 750px;
+            width: 90%;
+        }
+        .head{
+            text-align: center;
+            color: black;
+        }
+        .result{
+            margin-top: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid #fd7194;
+            height: 520px;
+            width: 90%;
+            overflow: scroll;
+        }
+        .paper{
+            margin-left: 20px;
+            
+        }
+        p{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">LUCKNOW STATE LOTTERIES</h2>
+    <div class="main">
+        <div class="head">
+            <img style="float: left;height: 50px;width: 50px;margin-left: 15px;" src="http://www.nagalandlotteries.in/images/logo.png" alt="">
+            <img style="float: right;height: 50px;width: 50px;margin-right: 15px;" src="http://www.nagalandlotteries.in/images/logo.png" alt="">
+            <h3 style="text-align: center;line-height: 50px;"> LUCKNOW STATE LOTTERIES </h3>
+            <h4 style="margin-top: 0;">TODAY'S RESULT: <span id='date-time'></span>  [09:00 PM]</h4>
+        </div>
+        <div class="result">
+        <div class="paper">
+
+            <div class="1st">
+                <p>1st Prize  26.02 Lakhs/-52D 38291/</p>
+            </div>
+            <br>
+            <div class="2nd">
+                <p>2nd Prize ₹9000/</p>
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+            </div>
+            <br>
+            <div class="3rd">
+                <p>3rd Prize ₹9000/</p>
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+            </div>
+            <br>
+            <div class="4th">
+                <p>4th Prize ₹9000/</p>
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+                02625 21968 23506 44795 45585
+            </div>
+        </div>
+        
+        </div>
+        <div style="margin-bottom: 20px; position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;" class="bottom">
+        <p style="text-align: center;">ISSUED BY:THE DIRECTOR, LUCKNOW STATE LOTTERIES</p>
+        </div>
+    </div>
+    
+</body>
+<script>
+    var today = new Date();
+    var dt = today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate();;
+    document.getElementById('date-time').innerHTML=dt;
+</script>
+</html>
